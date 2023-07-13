@@ -43,6 +43,8 @@ h1
         max-width: 720px
     @media (max-width: 767px)
         max-width: 540px
+    @media (max-width: 575px)
+        width: 100%
 
 
 
@@ -52,7 +54,8 @@ h1
     background-color: $background-grey-color
     padding-top: 16px
     overflow: hidden
-    
+    @media (max-width: 575px)
+        
     &__header
         width: 134px
         height: 69px
@@ -65,6 +68,9 @@ h1
         display: flex
         position: relative
         align-items: flex-end
+        @media (max-width: 575px)
+            align-items: flex-start
+            justify-content: center
     &__first-ellipse
         position: absolute
         top: 129px
@@ -75,7 +81,10 @@ h1
     &__second-ellipse
         position: absolute
         top: 650px
-        right: -120px        
+        right: -120px
+        @media (max-width: 575px)
+            top: 240px
+            left: -140px     
 
 .nav-menu
     &__list
@@ -91,6 +100,8 @@ h1
 .left-part
     position: relative
     width: 77%
+    @media (max-width: 575px)
+        display: none
     img
         position: relative
         width: 100%
@@ -158,11 +169,15 @@ h1
     display: flex
     flex-direction: column
     width: 372px
+    min-height: 250px
     position: absolute
     top: 150px
     right: 76px
     padding-left: 10px
-    z-index: 6       
+    z-index: 6
+    @media (max-width: 575px)
+        position: relative
+        min-height: 350px
     &__icons-box
         margin-bottom: 1px
     &__description
@@ -177,10 +192,8 @@ h1
         top: 50px
     @media (max-width: 767px)
         width: 300px
-        right: -92px
-        top: 35px
-    @media (max-width: 575px)
         right: -40px
+        top: 35px
 
 
     
@@ -191,6 +204,8 @@ h1
     margin-bottom: 5px
     @media (max-width: 991px)
         font-size: 50px
+    @media (max-width: 575px)
+        font-size: 40px
         
     &__hr
         position: absolute
@@ -203,6 +218,8 @@ h1
             bottom: 75px
             @media (max-width: 991px)
                 bottom: 53px
+            @media (max-width: 575px)
+                bottom: 37px
             
 
 
@@ -296,7 +313,7 @@ h1
         display: flex
         flex-wrap: wrap
         align-content: space-between
-        justify-content: space-between
+        justify-content: space-around
         margin-bottom: 28px
         z-index: 1
         
@@ -307,7 +324,9 @@ h1
         z-index: 1
         @media (max-width: 991px)
             flex-wrap: wrap
-            height: 170px
+            justify-content: flex-start
+            margin-left: 30px
+
     &__first-ellipse
         position: absolute
         top: 317px
@@ -331,6 +350,7 @@ h1
     border-radius: 10px
     display: flex
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    margin-bottom: 20px
 
     @media (max-width: 1199px)
         width: 300px
@@ -363,6 +383,7 @@ h1
 
 .benefit
     display: flex
+    margin-bottom: 20px
     & img
         width: 80px
         height: 80px
@@ -376,18 +397,26 @@ h1
         font-weight: 600
         @media (max-width: 991px)
             font-size: 30px
+        @media (max-width: 575px)
+            font-size: 20px
     & p
         font-size: 18px
         @media (max-width: 991px)
             font-size: 16px
+        @media (max-width: 575px)
+            font-size: 14px
 
 
 .third-section
-    height: 640px
+    min-height: 600px
     background: $background-grey-color
     position: relative
     overflow: hidden
     z-index: 0
+    padding-left: 10px
+    @media (max-width: 375px)
+        min-height: 660px
+        
     &__content-container
         display: flex
         position: relative
@@ -418,6 +447,8 @@ h1
         &__text
             font-size: 18px
             margin-bottom: 30px
+            @media (max-width: 575px)
+                font-size: 16px
     &__ellipse
         position: absolute
         top: 101px
@@ -445,11 +476,16 @@ h1
             width: 550px
         @media (max-width: 767px)
             width: 400px
+        @media (max-width: 575px)
+            display: none
 
     &__container
         min-height: 272px
         display: flex
         align-items: center
         justify-content: flex-end
+        @media (max-width: 575px)
+            justify-content: center
     &__title
         margin-bottom: 20px
+        
